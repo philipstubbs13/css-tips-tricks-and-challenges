@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* [data-tooltip]{
+    position: relative;
+  }
+
+  [data-tooltip]:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: .25rem;
+    top: 0;
+    top: -.5rem;
+    left: 50%;
+    transform: translate(-50%, -100%)
+  } */
+
+  /* ul ul li,
+  ul ol li,
+  ol ul li,
+  ol ol li {
+    color: red;
+  } */
+
+  /* :is(ul, ol) :is(ul, ol) li {
+    color: green;
+  } */
+
+  /* body {
+    counter-reset: heading;
+  }
+
+  h2::before {
+    content: "Part " counter(heading, upper-roman) ": ";
+    counter-increment: heading;
+  }
+
+  ol {
+    counter-reset: outline;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li::before {
+    content: counters(outline, '.') ". ";
+    counter-increment: outline;
+  } */
+
+  /* .flex {
+    display: flex;
+    gap: 10px;
+  }
+
+  .item {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+  }
+
+  .item:nth-child(2n) {
+    background-color: blue;
+  } */
+
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background: conic-gradient(red,green, red); */
+    background: conic-gradient(
+      red .25turn,
+      blue .25turn .5turn,
+      green .5turn
+    )
+  }
+</style>
+<body>
+  <!-- <button data-tooltip="Tooltip Text">Hover Me</button> -->
+
+  <!-- <ul>
+    <li>
+      Inner List 1
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+    </li>
+    <li>
+      Inner List 2
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </li>
+  </ul> -->
+
+  <!-- <h2>Intro</h2>
+  <h2>Body</h2>
+  <h2>Conclusion</h2>
+
+  <ol>
+    <li>list item</li>
+    <li>listitem
+      <ol>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item
+          <ol>
+            <li>list item</li>
+            <li>list item</li>
+          </ol>
+          <li>list item</li>
+        </li>
+      </ol>
+      <li>list item</li>
+      <li>list item</li>
+    </li>
+  </ol> -->
+
+  <!-- <div class="flex">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div> -->
+
+  <div></div>
+</body>
+</html>
