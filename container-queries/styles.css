@@ -1,0 +1,21 @@
+.btn.btn-outline:hover, .btn.btn-outline:focus {
+    background: hsl(200, 50%, 90%);
+}
+
+.btn + .btn {
+    margin-left: .25rem;
+}
+
+main, .sidebar {
+    container-type: inline-size;
+}
+
+@container (max-width: 500px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-header {
+        width: 100%;
+    }
+}
