@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    margin: 0;
+    /* Viewport Units */
+    font-size: clamp(0.5rem, 3.5vw, 10rem);
+}
+
+
+/* Clamp */
+.box {
+    background: rebeccapurple;
+    height: 200px;
+
+    width: clamp(300px, 75%, 500px);
+}
+
+
+// CSS Grid
+/* body {
+    display: flex;
+    margin: 0;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    grid-auto-rows: 100px;
+} */
+
+
+
+// Custom Media Queries
+/* @custom-media --big (width >= 400px);
+
+@media (--big) {
+    .box {
+        background: red;
+    }
+} */
+
+
+// Container Queries
+/* .main {
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+.main,
+.sidebar {
+    container-type: inline-size;
+} */
+
+/* @container (width >= 600px) {
+    .box {
+        background: red;
+    }
+} */
+
+
+// Media Query Ranges
+/* @media(100px <= width <= 300px) {
+    .box {
+        background: red;
+    }
+} */
+
+
+// Media Query Aspect Ratios
+/* @media (min-aspect-ration: 16 / 9) {
+    .box {
+        background: red;
+    }
+} */
+
+
+// Media Query Orientation
+/* @media (orientation: portrait) {
+    .box {
+        background: red;
+    }
+} */
