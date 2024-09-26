@@ -1,0 +1,23 @@
+@property --box-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: orange;
+}
+
+.box {
+  background-color: var(--box-color);
+  width: 100px;
+  height: 100px;
+}
+
+.box-1 {
+  --box-color: lightblue;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
